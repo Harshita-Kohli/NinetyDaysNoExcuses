@@ -45,3 +45,6 @@ Heap Memory:
 - Strings take up space in string pool, which is a part of the heap memory.
 - Slower retrieval than stack memory
 - The heap memory allocation remains untill cleared by Garbage Collector.
+
+## Eden --> Survivor --> Promotion:
+[Baeldung](https://blog.gceasy.io/understanding-generational-gc-young-old-promotion/)
