@@ -32,3 +32,16 @@ Static Methods:
 - Access: They must be called **using the interface name** (e.g., MyInterface.myStaticMethod()). They cannot be called via an instance of an implementing class.
 - No Overriding: **Unlike default methods, static methods cannot be overridden by implementing classes.**
 - Purpose: They are used for utility or helper methods that are relevant to the interface's domain, reducing the need for separate utility classes like Collections or Path
+
+## Stack vs Heap Memory: [Baeldung](http://baeldung.com/java-stack-heap)
+- Stack Memory in Java is used for **static memory allocation** and the execution of a thread.
+- It contains **primitive values that are specific to a method**.
+- It also contains **references to objects referred** from the method that are in a heap.
+- The stack memory is allocated when a method is called and deallocated when the method execution gets completed.
+
+Heap Memory:
+- Used for dynamic memory allocation.
+- Whenever we create an object using new keyword.
+- Strings take up space in string pool, which is a part of the heap memory.
+- Slower retrieval than stack memory
+- The heap memory allocation remains untill cleared by Garbage Collector.
